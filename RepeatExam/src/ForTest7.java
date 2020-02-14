@@ -21,7 +21,7 @@ public class ForTest7 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int row = 5;
+		int row = 10;
 		String str = "";
 		
 		str ="*";	//변수사용
