@@ -19,12 +19,12 @@ public class ForTest6 {
 		
 		int row = 5;
 		
-//		for(int i = 0; i < row; i++){
-//			for(int j = 0; j <= i; j++) {	//내부 for문 변수의 조건이 바깥 for문의 변수가 될 때 
-//				System.out.print("*");
-//			}
-//			System.out.println();
-//		}
+		for(int i = 0; i < row; i++){
+			for(int j = 0; j <= i; j++) {	//내부 for문 변수의 조건이 바깥 for문의 변수가 될 때 
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 		
 		//역삼각형
 		for(int i = row; i >= 0; i--){
