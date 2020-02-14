@@ -18,7 +18,7 @@ public class RockPaperScissorsMain {
 		
 		System.out.println("가위(1), 바위(2), 보(3) 중 하나를 입력하세요.");
 		user = scan.nextInt();
-	 
+		
 		
 		com = (int)(Math.random() * 3 ) + 1 ;
 		System.out.println("컴퓨터도 선택했습니다.");
