@@ -1,8 +1,8 @@
 /**
  * @author TJ
- * 정렬
+ * 1단계 버블정렬
  */
-public class ArrayEx5 {
+public class ArrayEx6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -18,14 +18,14 @@ public class ArrayEx5 {
 		int change = 0;
 		int tempNum = 0;
 		for (int i = 0; i < numArr.length; i++) {
-			for (int j = 0; j < numArr.length-1; j++) {
+			for (int j = 0; j < numArr.length-1-i; j++) {
+				cnt++;
 				if(numArr[j] > numArr[j+1]) {
 					tempNum = numArr[j];
 					numArr[j] = numArr[j+1];
 					numArr[j+1] = tempNum;
 					change++;
 				}
-				cnt++;
 			}
 		}
 	
