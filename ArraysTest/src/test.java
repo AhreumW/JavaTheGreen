@@ -2,13 +2,13 @@
 public class test {
 
 	public static void main(String[] args) {
-		int[] number = new int[10];
-		
+		int[] number = {5,6,7,0,1,6,2,1,9,5};
+		/*
 		for(int i =0; i<number.length; i++) {
-			System.out.println(number[i] = (int)(Math.random() * 10));
+			System.out.print(number[i] = (int)(Math.random() * 10));
 		}
 		System.out.println();
-		
+		*/
 		for(int i =0; i<number.length; i++) {
 			boolean changed = false;
 			
@@ -18,8 +18,16 @@ public class test {
 					number[j] = number[j+1];
 					number[j+1] = temp;
 					changed = true;
+					//System.out.println(number[j]+" , "+number[j+1]);
 				}
 			}
+			
+			if(!changed) break;
+			
+			for(int k =0; k<number.length;k++) {
+				System.out.print(number[k]);
+			}
+			System.out.println();
 		}
 	}
 }
