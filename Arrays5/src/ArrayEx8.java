@@ -34,13 +34,16 @@ public class ArrayEx8 {
 					
 					changed = true; // 자리 바꿈이 발생했음
 				} // if end
-						
+				
 				// 배열 값들의 중간 정렬 결과 확인
 				for (int j = 0; j < numArr.length; j++) {
 					System.out.print(numArr[j] + "  ");
 				}
 				System.out.println();
 				
+//				if(changed == false) {
+//					break; // 자리 변경이 없으면 반복문을 벗어남
+//				}
 			} // n for end
 			
 			if(changed == false) {
