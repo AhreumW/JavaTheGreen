@@ -1,0 +1,35 @@
+/**
+ * 
+ * @author TJ
+ * 구구단 만들기 
+ * 1차원 배열
+ * 결과만 1차원 배열에 넣는다. 
+ * 그걸 출력한다. 
+ * 
+ * 2차원 배열
+ * 
+ * 
+ */
+public class GugudanExam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] mulNumArr = new int[9];
+		/*
+		2 * 1 = mulNumArr[0]	3 * 1 = mulNumArr[1]	...		9 * 1 = mulNumArr[8]
+		2 * 1 = 2	3 * 1 = 3	...		9 * 1 = 9
+		2 * 2 = 4	3 * 2 = 6	...		9 * 2 = 18
+						:
+		2 * 9 = 18	3 * 9 = 27	...		9 * 9 = 81
+		*/
+		
+		for(int i=0; i<mulNumArr.length; i++) {
+			mulNumArr[i] = (i+2) * (i+1);
+			System.out.println((i+2)+" * "+(i+1)+" = "+mulNumArr[i]);
+		}
+		
+		
+	}
+
+}

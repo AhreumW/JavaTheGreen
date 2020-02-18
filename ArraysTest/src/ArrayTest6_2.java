@@ -1,6 +1,6 @@
 /**
  * @author TJ
- * 친구풀이
+ * 친구풀이 **
  * 
  * ArrayTest6에서 
  * 먼저 대입시키고 섞는 방식으로 바꿔봄
@@ -23,8 +23,9 @@ public class ArrayTest6_2 {
 		int n = 0;
 		
 		for(int i =0; i<numberArr.length; i++) {
-			tempNum = numberArr[i];
-			changeArr[i] = tempNum;
+			changeArr[i] = numberArr[i];
+//			tempNum = numberArr[i];
+//			changeArr[i] = tempNum;
 		}
 
 		//셔플 배열에 넣어주기.**
