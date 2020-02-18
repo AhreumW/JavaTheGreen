@@ -25,10 +25,25 @@ public class GugudanExam {
 		*/
 		
 		for(int i=0; i<mulNumArr.length; i++) {
-			mulNumArr[i] = (i+2) * (i+1);
-			System.out.println((i+2)+" * "+(i+1)+" = "+mulNumArr[i]);
+			
+			for(int j=1; j<mulNumArr.length; j++) {
+				mulNumArr[j] = (i+1) * (j+1);
+				System.out.print((j+1)+" * "+(i+1)+" = "+mulNumArr[j]+"\t");
+				
+				if(j % 8 == 0) {
+					System.out.println();
+				}
+			}
 		}
 		
+		/*
+		for(int i=1; i<mulNumArr.length; i++) {
+			for(int j=0; j<mulNumArr.length; j++) {
+				mulNumArr[j] = (i+1) * (j+1);
+				System.out.println((i+1)+" * "+(j+1)+" = "+mulNumArr[j]);
+			}
+		}
+		*/
 		
 	}
 
