@@ -26,6 +26,10 @@ public class CardMain {
 		card1.width = 50;
 		card1.height = 80;
 		
+		// 클래스 변수는 인스턴스를 생성하지 않고도 언제라도 바로 사용할 수 있다
+		//'클래스이름.클래스변수'
+		//Card.width = 70;
+		
 		System.out.println("card1은 "+ card1.kind + ", "+ card1.num + "이며, "
 				+ "크기는 "+ card1.width + "*"+ card1.height);
 		System.out.println("card2은 "+ card2.kind + ", "+ card2.num + "이며, "
