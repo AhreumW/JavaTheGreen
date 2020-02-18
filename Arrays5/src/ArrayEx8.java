@@ -20,7 +20,7 @@ public class ArrayEx8 {
 		// 자리 변경 여부 체크
 		boolean changed = false;
 		
-		for (int i = 0; i < numArr.length; i++) {
+		for (int i = 0; i < numArr.length-1; i++) {
 			changed = false; // 다시 수행하는 부분에 대한 초기화
 			
 			System.out.println((i+1) + "번째 수행값 :\t");

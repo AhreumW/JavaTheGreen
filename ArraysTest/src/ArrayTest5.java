@@ -59,7 +59,7 @@ public class ArrayTest5 {
 		
 		System.out.println();
 		System.out.print("점수 정렬한 값 :");
-		for(int i =0; i<scoreArr.length; i++) {		//정령한 점수 출력
+		for(int i =0; i<scoreArr.length; i++) {		//정렬한 점수 출력
 			System.out.print(" "+scoreArr[i]);
 		}
 		

@@ -14,7 +14,7 @@ public class ArrayEx7 {
 		
 		int cnt = 0;
 		int tempNum = 0;
-		for (int i = 0; i < numArr.length; i++) {
+		for (int i = 0; i < numArr.length-1; i++) {
 			System.out.println((i+1) + "번째 수행값 :\t");
 			for (int n = 0; n < numArr.length-1-i; n++) {
 				cnt++;
