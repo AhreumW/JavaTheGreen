@@ -20,7 +20,7 @@ public class Calculator {
 	int add(int a, int b) {
 		int s = 0;
 		s = a + b;
-		return s;		//타입일치 필수
+		return s;		//타입일치 필수		//return은 함수가 끝나기 전(})에 종료시키는 힘이 있음
 	}// ver1. 가독성, 유지보수  / 느림
 	
 	int add2(int a, int b) {
