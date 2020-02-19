@@ -24,8 +24,8 @@ public class GugudanExam2 {
 		9 * 1 = 18	9 * 2 = 27	...		9 * 9 = 81
 		*/
 		
-		for(int i = 1; i<mulNumArr.length; i++) {
-			for(int j = 0; j<mulNumArr.length; j++) {
+		for(int i = 1; i<mulNumArr.length; i++) { //2단~9단
+			for(int j = 0; j<mulNumArr.length; j++) { // *1~9
 				mulNumArr[i][j] = (i+1) * (j+1);
 				System.out.print((i+1)+ " * " + (j+1)+ " = "+ mulNumArr[i][j] +"\t");
 			}
