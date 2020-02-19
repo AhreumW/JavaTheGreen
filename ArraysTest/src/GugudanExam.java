@@ -8,7 +8,6 @@
  * 
  * 2차원 배열
  * 
- * 
  */
 public class GugudanExam {
 
