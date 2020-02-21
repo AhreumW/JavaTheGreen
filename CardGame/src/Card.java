@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author TJ
+ * 카드만 구현
+ */
 public class Card {
 	
 	static String[] shapeArr = {"♥","◆","♠","♣"};
@@ -10,6 +14,11 @@ public class Card {
 		
 	}
 	
+	public Card(int shapeIndex, int numberIndex) {
+		init(shapeIndex, numberIndex);
+		
+	}
+
 	//랜덤
 	void init() {	
 		// 모양 랜덤
