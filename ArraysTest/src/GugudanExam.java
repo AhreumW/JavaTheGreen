@@ -15,6 +15,8 @@ public class GugudanExam {
 		// TODO Auto-generated method stub
 		
 		int[] mulNumArr = new int[9];
+//		컨펌 -> 1차원 배열의 의도가 int[81]혹은 int[72]를 쓰길 바라셨나봄
+		
 		/*
 		2 * 1 = mulNumArr[0]	3 * 1 = mulNumArr[1]	...		9 * 1 = mulNumArr[8]
 		2 * 1 = 2	3 * 1 = 3	...		9 * 1 = 9
