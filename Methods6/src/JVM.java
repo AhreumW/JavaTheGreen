@@ -17,14 +17,14 @@ public class JVM {
 	그리고 메서드가 작업을 마치면 할당되었던 메모리공간은 반환되어 비워진다. 
 */	
 /*	
-						 자료 구조
-		class area			|	heap area			|	stack area * 
-	or method area			|						|stack : 후입선출 LIFO(Last In, First out)
-							|new를 한 순간, 			|
-	가장 먼저 생성				|인스턴스가 생성되면서		|메서드 수행 원리가 stack에 들어감.
+					자료 구조
+		class area		|	heap area			|	stack area * 
+	or method area			|					|stack : 후입선출 LIFO(Last In, First out)
+					|new를 한 순간, 			|
+	가장 먼저 생성		|인스턴스가 생성되면서		|메서드 수행 원리가 stack에 들어감.
 	JVM이 클래스파일 전체와 변수를 	|인스턴스변수들 & 객체들이 	|
-	클래스 영역에 저장시킴		|힙영역에 저장됨.			|
-							|						|
+	클래스 영역에 저장시킴			|힙영역에 저장됨.		|
+						|				|
 	cv : 클래스변수			|iv : 인스턴스변수			|lv: 로컬변수
 	절대 안사라짐				|반영구적(비휘발성)			|휘발성 - 바로바로 수행 후 소멸됨.
 		
