@@ -19,7 +19,7 @@ public class TryCatchTest1 {
 		
 		System.out.println("주사위가 돌아갑니다.");
 		diceNum = (int)(Math.random()* 6 + 1);
-		//System.out.println(diceNum);
+		//System.out.println(diceNum);		//정답 미리보기
 		
 		System.out.println("숫자를 입력해주세요.");
 		try {
