@@ -1,4 +1,5 @@
 package net.mega;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /*
@@ -15,12 +16,16 @@ public class MyInputUtil {
 	 * @return int형
 	 */
 	public int getUserInputNumber() {		//라이브러리 쓰려면 public**
+		//사용자가 잘 못 입력하면 0을 출력한다. 
 		Scanner scan = new Scanner(System.in);
-		
 		int num = 0;
 		
 		System.out.println("숫자를 입력해주세요.");
-		num = scan.nextInt();
+		try {
+			num = scan.nextInt();
+		} catch (InputMismatchException e) {
+			num = 0;
+		}
 		
 		return num;
 	}
