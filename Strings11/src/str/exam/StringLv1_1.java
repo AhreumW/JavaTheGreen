@@ -9,10 +9,10 @@ public class StringLv1_1 {
 		String originStr = "자바를 자바라"; // 기준
 		String changeStr = "";          // 결과
 		
+		changeStr = originStr.replace("자바", "db");
 		
 		
 //		자바를 자바라를 db를 db라로 변경하여 출력하시오 
-		
 		System.out.println(originStr);
 		System.out.println(changeStr);
 		
