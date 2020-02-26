@@ -4,7 +4,7 @@ package com.tg.throwss;
 public class Test1 {
 /*
 	void method1() throws Exception{
-		try {		//내부에서 처리했다 하더라도 에러가 생기면 상위로 올라가는 구조
+		try {		//내부에서 처리했다 하더라도 에러가 생기면 상위로 올라가는 구조(컴파일에러)
 			throw new Exception();		//exception 한번에 발생시키는 문장
 		} catch (Exception e) {			//근데 만약 내부에서 잡히면 try나머지도 수행하며 상위catch는 수행하지 않음
 			System.out.println("void method1() 메서드에서 예외가 처리되었습니다.");
