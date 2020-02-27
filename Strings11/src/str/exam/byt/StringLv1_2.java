@@ -1,6 +1,6 @@
 package str.exam.byt;
 
-public class StringLv2_2 {
+public class StringLv1_2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,7 +16,7 @@ public class StringLv2_2 {
 		
 		System.out.println(index);
 		
-		changeStr = "db" + originStr.substring(interestingStr.length());
+		changeStr = "db" + originStr.substring(2);
 		
 //		자바를 자바라를 db를 자바라로 변경하여 출력하시오 
 		
