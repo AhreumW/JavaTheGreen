@@ -1,7 +1,7 @@
 package com.tg.throwss;
 
 //try-catch, throw, throws
-public class Test1 {
+public class Test1 { 
 /*
 	void method1() throws Exception{
 		try {		//내부에서 처리했다 하더라도 에러가 생기면 상위로 올라가는 구조(컴파일에러)
@@ -19,9 +19,9 @@ public class Test1 {
 */	
 	//예외처리 명령어 선언
 	//Exception이라는 예외가 발생할수도 안할수도있는데 그 문제를 다음으로 던진다.
-	void method1() throws Exception{	//스택 바로 상위로 올라감
+	void method1() throws ArithmeticException, IndexOutOfBoundsException{	//스택 바로 상위로 올라감
 		System.out.println("나 수행함");
-		throw new Exception();
+		throw new ArithmeticException();
 	}
 
 }
