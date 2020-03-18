@@ -1,47 +1,42 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class ExArrayList2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		//List 부모 - ArrayList 자식
+		//부타자참 : 부모타입은 자식을 참조할 수 있다.
+		//한쪽을 List로 쓴다는 건 다형성을 이용하겠다는 이야기 
+		List strList = new ArrayList();
 		
-		ArrayList OneList = new ArrayList();	//1~9까지 
-		ArrayList TwoList = new ArrayList();	//2~3까지
+		strList.add("첫번째");
+		strList.add("두번째");
+		strList.add("세번째");
+		strList.add("네번째");
 		
+		viewList(strList);
 		
-		for(int i = 0; i< 9; i++) {
-			OneList.add(i+1);
-		}
-		for(int i = 0; i< 2; i++) {
-			TwoList.add(i+2);
-		}
-		
-		
-		for(int j = 0; j< OneList.size(); j++) {
-			System.out.print( OneList.get(j)+" ");
-		}
-		System.out.println();
-		for(int j = 0; j< TwoList.size(); j++) {
-			System.out.print( TwoList.get(j)+" ");
-		}
+		System.out.println("strList 0번째를 지운다.");
+		strList.remove(0);
 		System.out.println();
 		
-//		ArrayList OneList로 선언하면
-//		int num = OneList.get(0);에서
-//		type Missmatch가 뜬다 , OneList.get(0)가 오브젝트를 반환시킨다. 
-//		-> int num = (int)OneList.get(0); 형변환을 해주어야 한다. 
-//		모두 int형으로 받겠다는, ArrayList<Integer> OneList로 선언해주어도 문제가 해결된다. 
-		
-		int result = 0;
-		for(int i =0; i<OneList.size(); i++) {
-			for(int j = 0; j< TwoList.size(); j++) {
-				result = (int)OneList.get(i) * (int)TwoList.get(j);
-				System.out.println(OneList.get(i)+ " * " + TwoList.get(j)+ " = "+ result);
-			}
-		}
-		
+		viewList(strList);
 		
 	}
 
+	public static void viewList(List strList) {
+		
+		String str = "";
+		
+		for (int i = 0; i < strList.size(); i++) {
+			str = (String)strList.get(i);
+			System.out.println(i+ " : " + str);
+		}
+		System.out.println();
+		
+	}
+	
+	
 }
